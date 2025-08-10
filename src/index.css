@@ -45,6 +45,11 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
+    /* Jade Green Colors */
+    --jade: 158 64% 52%;
+    --jade-hover: 158 64% 45%;
+    --jade-foreground: 0 0% 100%;
+
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;

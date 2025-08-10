@@ -2,22 +2,22 @@ import React from 'react';
 
 const Benefits = () => {
   return (
-    <section className="flex flex-col items-center gap-20 self-stretch bg-white px-16 py-28 max-md:px-8 max-md:py-20 max-sm:px-4 max-sm:py-[60px]">
-      <div className="flex max-w-screen-xl flex-col items-start gap-20 self-stretch">
+    <section className="flex flex-col items-center gap-20 self-stretch bg-background px-16 py-28 max-md:px-8 max-md:py-20 max-sm:px-4 max-sm:py-[60px]">
+      <div className="flex max-w-screen-xl mx-auto flex-col items-start gap-20 self-stretch">
         <div className="flex items-center gap-20 self-stretch max-md:flex-col max-md:gap-10">
           <div className="flex flex-col items-start gap-8 flex-[1_0_0]">
             <div className="flex flex-col items-start gap-8 self-stretch">
               <div className="flex flex-col items-start gap-4 self-stretch">
                 <div className="flex items-center">
-                  <span className="text-[#070A04] text-base font-semibold leading-6">
+                  <span className="text-foreground text-base font-semibold leading-6">
                     Salud
                   </span>
                 </div>
                 <div className="flex flex-col items-start gap-6 self-stretch">
-                  <h2 className="self-stretch text-[#070A04] text-[52px] font-medium leading-[62.4px] tracking-[-0.52px] max-md:text-4xl max-sm:text-[28px]">
+                  <h2 className="self-stretch text-foreground text-[52px] font-medium leading-[62.4px] tracking-[-0.52px] max-md:text-4xl max-sm:text-[28px]">
                     Beneficios de nuestra plataforma para todos
                   </h2>
-                  <p className="self-stretch text-[#070A04] text-lg font-normal leading-[27px] max-sm:text-base">
+                  <p className="self-stretch text-foreground text-lg font-normal leading-[27px] max-sm:text-base">
                     Nuestra plataforma ofrece una evaluación precisa del
                     riesgo de diabetes tipo 2. Con un diseño accesible,
                     facilita el seguimiento de la salud de los jóvenes,
@@ -36,10 +36,10 @@ const Benefits = () => {
                         }}
                       />
                     </div>
-                    <h3 className="self-stretch text-[#070A04] text-[22px] font-medium leading-[30.8px] tracking-[-0.22px]">
+                    <h3 className="self-stretch text-foreground text-[22px] font-medium leading-[30.8px] tracking-[-0.22px]">
                       Evaluación Rápida
                     </h3>
-                    <p className="self-stretch text-[#070A04] text-base font-normal leading-6">
+                    <p className="self-stretch text-foreground text-base font-normal leading-6">
                       Obtén resultados claros y visuales sobre tu riesgo de
                       diabetes.
                     </p>
@@ -53,10 +53,10 @@ const Benefits = () => {
                         }}
                       />
                     </div>
-                    <h3 className="self-stretch text-[#070A04] text-[22px] font-medium leading-[30.8px] tracking-[-0.22px]">
+                    <h3 className="self-stretch text-foreground text-[22px] font-medium leading-[30.8px] tracking-[-0.22px]">
                       Acceso Fácil
                     </h3>
-                    <p className="self-stretch text-[#070A04] text-base font-normal leading-6">
+                    <p className="self-stretch text-foreground text-base font-normal leading-6">
                       Accede a tu historial y recomendaciones en cualquier
                       momento.
                     </p>
@@ -65,13 +65,13 @@ const Benefits = () => {
               </div>
             </div>
             <div className="flex items-center gap-6">
-              <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-transparent hover:bg-gray-100 px-4 py-2 transition-colors">
-                <span className="text-[#070A04] text-base font-medium leading-6">
+              <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-jade hover:bg-jade-hover text-jade-foreground px-6 py-3 transition-colors">
+                <span className="text-base font-medium leading-6">
                   Iniciar
                 </span>
               </button>
-              <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-transparent hover:bg-gray-100 px-4 py-2 transition-colors">
-                <span className="text-[#070A04] text-base font-medium leading-6">
+              <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-transparent hover:bg-muted px-4 py-2 transition-colors">
+                <span className="text-foreground text-base font-medium leading-6">
                   Más
                 </span>
                 <div

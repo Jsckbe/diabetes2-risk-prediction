@@ -2,8 +2,8 @@ import React from 'react';
 
 const ContactInfo = () => {
   return (
-    <section className="flex flex-col items-center gap-20 self-stretch bg-white px-16 py-28 max-md:px-8 max-md:py-20 max-sm:px-4 max-sm:py-[60px]">
-      <div className="flex max-w-screen-xl flex-col items-start gap-20 self-stretch">
+    <section className="flex flex-col items-center gap-20 self-stretch bg-background px-16 py-28 max-md:px-8 max-md:py-20 max-sm:px-4 max-sm:py-[60px]">
+      <div className="flex max-w-screen-xl mx-auto flex-col items-start gap-20 self-stretch">
         <header className="flex max-w-screen-md flex-col items-start gap-4 self-stretch">
           <div className="flex items-center">
             <span className="text-[#070A04] text-base font-semibold leading-6">

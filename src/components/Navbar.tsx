@@ -1,10 +1,11 @@
 import React from 'react';
+import DropdownMenu from './DropdownMenu';
 
 const Navbar = () => {
   return (
-    <header className="flex flex-col items-center self-stretch bg-white">
+    <header className="flex flex-col items-center self-stretch bg-background">
       <div className="flex h-[72px] justify-between items-center self-stretch px-16 py-0 max-md:px-8 max-md:py-0 max-sm:px-4 max-sm:py-0">
-        <div className="flex w-full max-w-[1334px] items-center justify-between">
+        <div className="flex w-full max-w-[1334px] mx-auto items-center justify-between">
           <div className="flex w-[120px] h-12 justify-center items-center shrink-0 pl-[6.667px] pr-[7.333px] py-0">
             <div>
               <div
@@ -17,36 +18,26 @@ const Navbar = () => {
           </div>
           <nav className="flex items-center gap-6 max-sm:hidden">
             <div className="flex items-center gap-8 max-md:hidden">
-              <a href="#inicio" className="text-[#070A04] text-base font-normal leading-6 cursor-pointer hover:text-gray-600 transition-colors">
+              <a href="#inicio" className="text-foreground text-base font-normal leading-6 cursor-pointer hover:text-muted-foreground transition-colors px-4 py-2 rounded-lg hover:bg-muted">
                 Inicio Rápido
               </a>
-              <a href="#evaluar" className="text-[#070A04] text-base font-normal leading-6 cursor-pointer hover:text-gray-600 transition-colors">
+              <a href="#evaluar" className="text-foreground text-base font-normal leading-6 cursor-pointer hover:text-muted-foreground transition-colors px-4 py-2 rounded-lg hover:bg-muted">
                 Evaluar Riesgo
               </a>
-              <a href="#ayuda" className="text-[#070A04] text-base font-normal leading-6 cursor-pointer hover:text-gray-600 transition-colors">
+              <a href="#ayuda" className="text-foreground text-base font-normal leading-6 cursor-pointer hover:text-muted-foreground transition-colors px-4 py-2 rounded-lg hover:bg-muted">
                 Centro Ayuda
               </a>
-              <div className="flex justify-center items-center gap-1 cursor-pointer group">
-                <span className="text-[#070A04] text-base font-normal leading-6 group-hover:text-gray-600 transition-colors">
-                  Más Opciones
-                </span>
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html:
-                      "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"chevron-down\"> <path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M12.3977 15.6629C12.178 15.8826 11.8219 15.8826 11.6022 15.6629L5.86739 9.92804C5.64772 9.70837 5.64772 9.35227 5.86739 9.13259L6.13256 8.86739C6.35222 8.64772 6.70838 8.64772 6.92805 8.86739L12 13.9393L17.0719 8.86739C17.2916 8.64772 17.6477 8.64772 17.8674 8.86739L18.1326 9.13259C18.3522 9.35227 18.3522 9.70837 18.1326 9.92804L12.3977 15.6629Z\" fill=\"#070A04\"></path> </svg>",
-                  }}
-                />
-              </div>
+              <DropdownMenu />
             </div>
           </nav>
           <div className="flex justify-center items-center gap-4">
-            <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-transparent hover:bg-gray-100 px-4 py-2 transition-colors">
-              <span className="text-[#070A04] text-base font-medium leading-6">
+            <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-transparent hover:bg-muted px-4 py-2 transition-colors">
+              <span className="text-foreground text-base font-medium leading-6">
                 Login
               </span>
             </button>
-            <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-transparent hover:bg-gray-100 px-4 py-2 transition-colors">
-              <span className="text-[#070A04] text-base font-medium leading-6">
+            <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-jade hover:bg-jade-hover text-jade-foreground px-4 py-2 transition-colors">
+              <span className="text-base font-medium leading-6">
                 Registrarse
               </span>
             </button>

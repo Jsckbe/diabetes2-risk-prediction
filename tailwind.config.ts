@@ -52,6 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				jade: {
+					DEFAULT: 'hsl(var(--jade))',
+					hover: 'hsl(var(--jade-hover))',
+					foreground: 'hsl(var(--jade-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

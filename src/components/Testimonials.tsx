@@ -2,8 +2,8 @@ import React from 'react';
 
 const Testimonials = () => {
   return (
-    <section className="flex flex-col items-center gap-20 self-stretch bg-white px-16 py-28 max-md:px-8 max-md:py-20 max-sm:px-4 max-sm:py-[60px]">
-      <div className="flex max-w-screen-xl flex-col items-start gap-20 self-stretch">
+    <section className="flex flex-col items-center gap-20 self-stretch bg-background px-16 py-28 max-md:px-8 max-md:py-20 max-sm:px-4 max-sm:py-[60px]">
+      <div className="flex max-w-screen-xl mx-auto flex-col items-start gap-20 self-stretch">
         <div className="flex items-center gap-20 self-stretch max-md:flex-col max-md:gap-10">
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/972cdf097f923cdc39b2572135cfdc53f8dee999?width=736"
@@ -19,17 +19,17 @@ const Testimonials = () => {
                 }}
               />
             </div>
-            <blockquote className="self-stretch text-[#070A04] text-[28px] font-medium leading-[39.2px] tracking-[-0.28px] max-sm:text-xl">
+            <blockquote className="self-stretch text-foreground text-[28px] font-medium leading-[39.2px] tracking-[-0.28px] max-sm:text-xl">
               "Gracias a esta plataforma, pude conocer mi riesgo de
               diabetes y tomar medidas a tiempo. La evaluación fue fácil de
               entender y muy útil para mi salud."
             </blockquote>
             <div className="flex items-center gap-5">
               <div className="flex flex-col items-start">
-                <cite className="text-[#070A04] text-base font-semibold leading-6 not-italic">
+                <cite className="text-foreground text-base font-semibold leading-6 not-italic">
                   María López
                 </cite>
-                <p className="text-[#070A04] text-base font-normal leading-6">
+                <p className="text-foreground text-base font-normal leading-6">
                   Paciente, Lima
                 </p>
               </div>

@@ -53,19 +53,19 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="flex justify-end items-center self-stretch min-h-[1000px] bg-white px-16 py-28 max-md:px-8 max-md:py-20 max-sm:px-4 max-sm:py-[60px]">
-      <div className="w-full max-w-screen-xl relative mx-auto my-0 max-sm:p-0">
+    <section className="flex flex-col items-center gap-20 self-stretch min-h-[1000px] bg-background px-16 py-28 max-md:px-8 max-md:py-20 max-sm:px-4 max-sm:py-[60px]">
+      <div className="w-full max-w-screen-xl mx-auto flex flex-col items-start max-sm:p-0">
         <header className="flex flex-col justify-center items-start gap-4 max-w-[822px] mb-10 max-sm:mb-6">
           <div className="flex items-center">
-            <span className="text-[#070A04] text-base font-semibold leading-6">
+            <span className="text-foreground text-base font-semibold leading-6">
               Salud y Bienestar
             </span>
           </div>
           <div className="flex flex-col items-start gap-[27px] self-stretch">
-            <h2 className="self-stretch text-[#070A04] text-[52px] font-medium leading-[62.4px] tracking-[-0.52px] max-md:text-4xl max-sm:text-[28px]">
+            <h2 className="self-stretch text-foreground text-[52px] font-medium leading-[62.4px] tracking-[-0.52px] max-md:text-4xl max-sm:text-[28px]">
               Modelo Predictivo para la Detección de Diabetes
             </h2>
-            <p className="self-stretch text-[#070A04] text-lg font-normal leading-[27px] max-sm:text-base">
+            <p className="self-stretch text-foreground text-lg font-normal leading-[27px] max-sm:text-base">
               Evalúe su riesgo de diabetes de manera sencilla Ingrese sus
               datos:
             </p>
@@ -336,7 +336,7 @@ const ContactForm = () => {
 
           <button
             type="submit"
-            className="flex justify-center items-center gap-2 cursor-pointer w-full max-w-[457px] mt-6 rounded-xl border-none bg-[#070A04] text-white px-6 py-3 hover:bg-gray-800 transition-colors max-sm:max-w-full"
+            className="flex justify-center items-center gap-2 cursor-pointer w-full max-w-[457px] mt-6 rounded-xl border-none bg-jade hover:bg-jade-hover text-jade-foreground px-6 py-3 transition-colors max-sm:max-w-full"
           >
             <span className="text-base font-medium leading-6">
               Generar Predicción

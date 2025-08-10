@@ -2,16 +2,16 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center gap-20 self-stretch min-h-[824px] bg-white px-16 py-0 max-md:px-8 max-md:py-0 max-sm:px-4 max-sm:py-0">
-      <div className="flex max-w-screen-xl flex-col items-start gap-20 flex-[1_0_0] self-stretch pt-20">
+    <section className="flex flex-col items-center gap-20 self-stretch min-h-[824px] bg-background px-16 py-0 max-md:px-8 max-md:py-0 max-sm:px-4 max-sm:py-0">
+      <div className="flex max-w-screen-xl mx-auto flex-col items-start gap-20 flex-[1_0_0] self-stretch pt-20">
         <div className="flex items-center flex-[1_0_0] self-stretch gap-20 max-md:flex-col max-md:gap-10">
           <div className="flex flex-col justify-center items-start gap-8 flex-[1_0_0] self-stretch pr-20">
             <div className="flex flex-col items-start gap-6 self-stretch">
-              <h1 className="self-stretch text-[#070A04] text-7xl font-medium leading-[86.4px] tracking-[-0.72px] max-md:text-5xl max-sm:text-[32px]">
+              <h1 className="self-stretch text-foreground text-7xl font-medium leading-[86.4px] tracking-[-0.72px] max-md:text-5xl max-sm:text-[32px]">
                 Plataforma de predicción diabetes tipo 2
               </h1>
               <div className="flex items-start content-start gap-6 self-stretch flex-wrap">
-                <p className="w-[560px] text-[#070A04] text-lg font-normal leading-[27px] max-md:w-full max-sm:text-base">
+                <p className="w-[560px] text-foreground text-lg font-normal leading-[27px] max-md:w-full max-sm:text-base">
                   Nuestra plataforma te ayuda a evaluar tu riesgo de diabetes
                   tipo 2 de manera sencilla y accesible. Completa el
                   formulario y obtén resultados claros que te guiarán hacia
@@ -19,8 +19,8 @@ const Hero = () => {
                 </p>
                 <div className="flex items-start gap-2.5">
                   <div className="flex items-start gap-4">
-                    <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-transparent hover:bg-gray-100 px-4 py-2 transition-colors">
-                      <span className="text-[#070A04] text-base font-medium leading-6">
+                    <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-transparent hover:bg-muted px-4 py-2 transition-colors">
+                      <span className="text-foreground text-base font-medium leading-6">
                         + Info
                       </span>
                     </button>

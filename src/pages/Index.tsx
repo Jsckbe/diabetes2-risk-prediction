@@ -12,10 +12,10 @@ import ContactInfo from '@/components/ContactInfo';
 
 const Index = () => {
   return (
-    <div className="flex w-full flex-col items-start bg-white">
+    <div className="flex w-full flex-col items-center bg-background min-h-screen">
       <Navbar />
       
-      <main>
+      <main className="w-full flex flex-col items-center">
         <Hero />
         
         <CTASection

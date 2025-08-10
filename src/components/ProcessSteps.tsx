@@ -2,19 +2,19 @@ import React from 'react';
 
 const ProcessSteps = () => {
   return (
-    <section className="flex flex-col items-center gap-20 self-stretch bg-white px-16 py-28 max-md:px-8 max-md:py-20 max-sm:px-4 max-sm:py-[60px]">
-      <div className="flex max-w-screen-xl flex-col items-center gap-20 self-stretch">
+    <section className="flex flex-col items-center gap-20 self-stretch bg-background px-16 py-28 max-md:px-8 max-md:py-20 max-sm:px-4 max-sm:py-[60px]">
+      <div className="flex max-w-screen-xl mx-auto flex-col items-center gap-20 self-stretch">
         <header className="flex max-w-screen-md flex-col items-center gap-4 self-stretch">
           <div className="flex items-center">
-            <span className="text-[#070A04] text-base font-semibold leading-6">
+            <span className="text-foreground text-base font-semibold leading-6">
               Evalúa
             </span>
           </div>
           <div className="flex flex-col items-center gap-6 self-stretch">
-            <h2 className="self-stretch text-[#070A04] text-center text-[52px] font-medium leading-[62.4px] tracking-[-0.52px] max-md:text-4xl max-sm:text-[28px]">
+            <h2 className="self-stretch text-foreground text-center text-[52px] font-medium leading-[62.4px] tracking-[-0.52px] max-md:text-4xl max-sm:text-[28px]">
               Descubre tu riesgo de diabetes fácilmente
             </h2>
-            <p className="self-stretch text-[#070A04] text-center text-lg font-normal leading-[27px] max-sm:text-base">
+            <p className="self-stretch text-foreground text-center text-lg font-normal leading-[27px] max-sm:text-base">
               Completa el formulario con tus datos personales y clínicos.
               Obtén un análisis claro y visual de tu riesgo de diabetes tipo
               2.
@@ -30,10 +30,10 @@ const ProcessSteps = () => {
                 className="w-[357px] h-[211px] aspect-[357/211] object-cover rounded-2xl max-md:w-full max-md:max-w-[357px]"
               />
               <div className="flex flex-col items-center gap-6 self-stretch">
-                <h3 className="self-stretch text-[#070A04] text-center text-4xl font-medium leading-[46.8px] tracking-[-0.36px] max-sm:text-2xl">
+                <h3 className="self-stretch text-foreground text-center text-4xl font-medium leading-[46.8px] tracking-[-0.36px] max-sm:text-2xl">
                   Datos necesarios para la evaluación
                 </h3>
-                <p className="self-stretch text-[#070A04] text-center text-base font-normal leading-6">
+                <p className="self-stretch text-foreground text-center text-base font-normal leading-6">
                   Deberá ingresar su edad, sexo, medidas y otros datos más.
                 </p>
               </div>
@@ -71,13 +71,13 @@ const ProcessSteps = () => {
           </div>
         </div>
         <div className="flex items-center gap-6">
-          <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-transparent hover:bg-gray-100 px-4 py-2 transition-colors">
-            <span className="text-[#070A04] text-base font-medium leading-6">
+          <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-jade hover:bg-jade-hover text-jade-foreground px-6 py-3 transition-colors">
+            <span className="text-base font-medium leading-6">
               Iniciar
             </span>
           </button>
-          <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-transparent hover:bg-gray-100 px-4 py-2 transition-colors">
-            <span className="text-[#070A04] text-base font-medium leading-6">
+          <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-transparent hover:bg-muted px-4 py-2 transition-colors">
+            <span className="text-foreground text-base font-medium leading-6">
               Ayuda
             </span>
             <div
