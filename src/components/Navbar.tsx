@@ -1,12 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { useAuth } from '@/contexts/AuthContext';
 import DropdownMenu from './DropdownMenu';
 
 const Navbar = () => {
+  const { user, logout } = useAuth();
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="flex flex-col items-center self-stretch bg-background">
       <div className="flex h-[72px] justify-between items-center self-stretch px-16 py-0 max-md:px-8 max-md:py-0 max-sm:px-4 max-sm:py-0">
         <div className="flex w-full max-w-[1334px] mx-auto items-center justify-between">
-          <div className="flex w-[120px] h-12 justify-center items-center shrink-0 pl-[6.667px] pr-[7.333px] py-0">
+          <Link to="/" className="flex w-[120px] h-12 justify-center items-center shrink-0 pl-[6.667px] pr-[7.333px] py-0">
             <div>
               <div
                 dangerouslySetInnerHTML={{
@@ -15,33 +26,69 @@ const Navbar = () => {
                 }}
               />
             </div>
-          </div>
+          </Link>
           <nav className="flex items-center gap-6 max-sm:hidden">
             <div className="flex items-center gap-8 max-md:hidden">
-              <a href="#inicio" className="text-foreground text-base font-normal leading-6 cursor-pointer hover:text-muted-foreground transition-colors px-4 py-2 rounded-lg hover:bg-muted">
+              <button 
+                onClick={() => scrollToSection('hero')}
+                className="text-foreground text-base font-normal leading-6 cursor-pointer hover:text-muted-foreground transition-colors px-4 py-2 rounded-lg hover:bg-button-secondary"
+              >
                 Inicio Rápido
-              </a>
-              <a href="#evaluar" className="text-foreground text-base font-normal leading-6 cursor-pointer hover:text-muted-foreground transition-colors px-4 py-2 rounded-lg hover:bg-muted">
+              </button>
+              <button 
+                onClick={() => scrollToSection('contact-form')}
+                className="text-foreground text-base font-normal leading-6 cursor-pointer hover:text-muted-foreground transition-colors px-4 py-2 rounded-lg hover:bg-button-secondary"
+              >
                 Evaluar Riesgo
-              </a>
-              <a href="#ayuda" className="text-foreground text-base font-normal leading-6 cursor-pointer hover:text-muted-foreground transition-colors px-4 py-2 rounded-lg hover:bg-muted">
+              </button>
+              <button 
+                onClick={() => scrollToSection('faq')}
+                className="text-foreground text-base font-normal leading-6 cursor-pointer hover:text-muted-foreground transition-colors px-4 py-2 rounded-lg hover:bg-button-secondary"
+              >
                 Centro Ayuda
-              </a>
+              </button>
               <DropdownMenu />
             </div>
           </nav>
-          <div className="flex justify-center items-center gap-4">
-            <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-transparent hover:bg-muted px-4 py-2 transition-colors">
-              <span className="text-foreground text-base font-medium leading-6">
-                Login
-              </span>
-            </button>
-            <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-jade hover:bg-jade-hover text-jade-foreground px-4 py-2 transition-colors">
-              <span className="text-base font-medium leading-6">
-                Registrarse
-              </span>
-            </button>
-          </div>
+          
+          {user ? (
+            <div className="flex justify-center items-center gap-4">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 bg-jade rounded-full flex items-center justify-center">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-jade-foreground">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                  </svg>
+                </div>
+                <span className="text-foreground text-base font-medium">{user.name}</span>
+              </div>
+              <button 
+                onClick={logout}
+                className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-button-secondary hover:bg-button-secondary-hover text-button-secondary-foreground px-4 py-2 transition-colors"
+              >
+                <span className="text-base font-medium leading-6">
+                  Cerrar Sesión
+                </span>
+              </button>
+            </div>
+          ) : (
+            <div className="flex justify-center items-center gap-4">
+              <Link to="/login">
+                <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-button-secondary hover:bg-button-secondary-hover text-button-secondary-foreground px-4 py-2 transition-colors">
+                  <span className="text-base font-medium leading-6">
+                    Login
+                  </span>
+                </button>
+              </Link>
+              <Link to="/register">
+                <button className="flex justify-center items-center gap-2 cursor-pointer rounded-xl border-none bg-jade hover:bg-jade-hover text-jade-foreground px-4 py-2 transition-colors">
+                  <span className="text-base font-medium leading-6">
+                    Registrarse
+                  </span>
+                </button>
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </header>

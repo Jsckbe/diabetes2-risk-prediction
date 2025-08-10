@@ -31,15 +31,15 @@ const ContactInfo = () => {
                 />
               </div>
               <div className="flex flex-col items-start gap-2 self-stretch">
-                <h3 className="self-stretch text-[#070A04] text-[22px] font-medium leading-[30.8px] tracking-[-0.22px]">
+                <h3 className="self-stretch text-foreground text-[22px] font-medium leading-[30.8px] tracking-[-0.22px]">
                   Correo
                 </h3>
-                <p className="self-stretch text-[#070A04] text-base font-normal leading-6">
-                  Lorem ipsum dolor sit amet.
+                <p className="self-stretch text-foreground text-base font-normal leading-6">
+                  Contactanos para cualquier consulta sobre diabetes y salud
                 </p>
                 <a
                   href="mailto:soporte@diabetes.com"
-                  className="self-stretch text-[#070A04] text-base font-normal leading-6 underline hover:text-gray-600 transition-colors"
+                  className="self-stretch text-foreground text-base font-normal leading-6 underline hover:text-muted-foreground transition-colors"
                 >
                   soporte@diabetes.com
                 </a>
@@ -55,20 +55,68 @@ const ContactInfo = () => {
                 />
               </div>
               <div className="flex flex-col items-start gap-2 self-stretch">
-                <h3 className="self-stretch text-[#070A04] text-[22px] font-medium leading-[30.8px] tracking-[-0.22px]">
+                <h3 className="self-stretch text-foreground text-[22px] font-medium leading-[30.8px] tracking-[-0.22px]">
                   Teléfono
                 </h3>
-                <p className="self-stretch text-[#070A04] text-base font-normal leading-6">
-                  Lorem ipsum dolor sit amet.
+                <p className="self-stretch text-foreground text-base font-normal leading-6">
+                  Atención personalizada de lunes a viernes
                 </p>
                 <a
                   href="tel:+51999999999"
-                  className="self-stretch text-[#070A04] text-base font-normal leading-6 underline hover:text-gray-600 transition-colors"
+                  className="self-stretch text-foreground text-base font-normal leading-6 underline hover:text-muted-foreground transition-colors"
                 >
                   +51 999 999 999
                 </a>
               </div>
             </article>
+            
+            <div className="flex flex-col items-start gap-4 self-stretch">
+              <h3 className="text-foreground text-[22px] font-medium leading-[30.8px] tracking-[-0.22px]">
+                Síguenos
+              </h3>
+              <div className="flex items-center gap-4">
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-button-secondary hover:bg-button-secondary-hover transition-colors">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                </a>
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-button-secondary hover:bg-button-secondary-hover transition-colors">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                  </svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-button-secondary hover:bg-button-secondary-hover transition-colors">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987c6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-1.297 0-2.448-.49-3.328-1.297L6.468 14.34c.467.637 1.203 1.05 2.034 1.05c1.376 0 2.498-1.111 2.498-2.498c0-1.376-1.122-2.498-2.498-2.498c-.831 0-1.567.414-2.034 1.05L4.121 9.993c.88-.806 2.031-1.297 3.328-1.297c2.664 0 4.83 2.166 4.83 4.83c0 2.664-2.166 4.462-4.83 4.462z"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="flex flex-col items-start gap-8 flex-[1_0_0] max-md:w-full">
+            <img
+              src="https://api.builder.io/api/v1/image/assets/TEMP/contact-support-image.jpg?width=600"
+              alt="Equipo de soporte médico especializado en diabetes"
+              className="w-full h-[400px] object-cover rounded-2xl"
+            />
+            <div className="flex flex-col items-start gap-4 self-stretch">
+              <h3 className="text-foreground text-[22px] font-medium leading-[30.8px] tracking-[-0.22px]">
+                ¿Necesitas ayuda?
+              </h3>
+              <p className="text-foreground text-base font-normal leading-6">
+                Nuestro equipo de especialistas está disponible para resolver todas tus dudas sobre diabetes y el uso de nuestra plataforma.
+              </p>
+              <a
+                href="#faq"
+                className="flex items-center gap-2 text-jade hover:text-jade-hover transition-colors"
+              >
+                <span className="text-base font-medium">Ver preguntas frecuentes</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M9 18l6-6-6-6"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>

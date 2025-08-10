@@ -46,9 +46,14 @@
     --ring: 222.2 84% 4.9%;
 
     /* Jade Green Colors */
-    --jade: 158 64% 52%;
-    --jade-hover: 158 64% 45%;
-    --jade-foreground: 0 0% 100%;
+    --jade: 158 84% 68%;
+    --jade-hover: 158 84% 60%;
+    --jade-foreground: 222.2 84% 4.9%;
+    
+    /* Secondary Button Colors */
+    --button-secondary: 88 49% 60%;
+    --button-secondary-hover: 88 49% 50%;
+    --button-secondary-foreground: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
 

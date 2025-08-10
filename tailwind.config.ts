@@ -57,6 +57,11 @@ export default {
 					hover: 'hsl(var(--jade-hover))',
 					foreground: 'hsl(var(--jade-foreground))'
 				},
+				'button-secondary': {
+					DEFAULT: 'hsl(var(--button-secondary) / 0.05)',
+					hover: 'hsl(var(--button-secondary-hover) / 0.1)',
+					foreground: 'hsl(var(--button-secondary-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
